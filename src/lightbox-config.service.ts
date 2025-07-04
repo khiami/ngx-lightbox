@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+import { Injectable, TemplateRef, } from '@angular/core';
 
 @Injectable()
 export class LightboxConfig {
@@ -18,6 +18,7 @@ export class LightboxConfig {
   public showRotate: boolean;
   public showDownloadButton: boolean;
   public containerElementResolver: (document: any) => HTMLElement;
+  public customTemplate?: TemplateRef<any>;
 
   constructor() {
     this.fadeDuration = 0.7;

@@ -1,6 +1,6 @@
 import { Observable, Subject } from 'rxjs';
 
-import { Injectable} from '@angular/core';
+import { Injectable, TemplateRef } from '@angular/core';
 
 export interface IEvent {
   id: number;
@@ -12,6 +12,7 @@ export interface IAlbum {
   caption?: string;
   thumb: string;
   downloadUrl?: string;
+  customTemplate?: TemplateRef<any>;
 }
 
 export const LIGHTBOX_EVENT = {

@@ -42,6 +42,9 @@ import {
         </div>
       </div>
     </div>
+    <div class="lb-custom-template-container" *ngIf="options.customTemplate">
+        <ng-container [ngTemplateOutlet]="options.customTemplate"></ng-container>
+    </div>
     <div class="lb-dataContainer" [hidden]="ui.showReloader" #dataContainer>
       <div class="lb-data">
         <div class="lb-details">
